@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E219E7472B75C25100D36BA7 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E219E7462B75C25100D36BA7 /* Game.swift */; };
 		E23FEA6E2B6C783400A50BF4 /* ios_first_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23FEA6D2B6C783400A50BF4 /* ios_first_appApp.swift */; };
 		E23FEA702B6C783400A50BF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23FEA6F2B6C783400A50BF4 /* ContentView.swift */; };
 		E23FEA722B6C783600A50BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E23FEA712B6C783600A50BF4 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E219E7462B75C25100D36BA7 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		E23FEA6A2B6C783400A50BF4 /* ios_first_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_first_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23FEA6D2B6C783400A50BF4 /* ios_first_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_first_appApp.swift; sourceTree = "<group>"; };
 		E23FEA6F2B6C783400A50BF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E219E7432B75C19700D36BA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E219E7462B75C25100D36BA7 /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E219E7442B75C1BF00D36BA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E23FEA6F2B6C783400A50BF4 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E219E7452B75C1FC00D36BA7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E23FEA6D2B6C783400A50BF4 /* ios_first_appApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E219E7482B75CBA400D36BA7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		E23FEA612B6C783400A50BF4 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +84,10 @@
 		E23FEA6C2B6C783400A50BF4 /* ios_first_app */ = {
 			isa = PBXGroup;
 			children = (
-				E23FEA6D2B6C783400A50BF4 /* ios_first_appApp.swift */,
-				E23FEA6F2B6C783400A50BF4 /* ContentView.swift */,
+				E219E7482B75CBA400D36BA7 /* Tests */,
+				E219E7452B75C1FC00D36BA7 /* App */,
+				E219E7442B75C1BF00D36BA7 /* Views */,
+				E219E7432B75C19700D36BA7 /* Models */,
 				E23FEA712B6C783600A50BF4 /* Assets.xcassets */,
 				E23FEA732B6C783600A50BF4 /* Preview Content */,
 			);
@@ -138,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E23FEA702B6C783400A50BF4 /* ContentView.swift in Sources */,
+				E219E7472B75C25100D36BA7 /* Game.swift in Sources */,
 				E23FEA6E2B6C783400A50BF4 /* ios_first_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
