@@ -12,6 +12,7 @@
 		E23FEA702B6C783400A50BF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23FEA6F2B6C783400A50BF4 /* ContentView.swift */; };
 		E23FEA722B6C783600A50BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E23FEA712B6C783600A50BF4 /* Assets.xcassets */; };
 		E23FEA752B6C783600A50BF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E23FEA742B6C783600A50BF4 /* Preview Assets.xcassets */; };
+		E259D7FF2B7EDA9200EF569B /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E259D7FE2B7EDA9200EF569B /* TextViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E23FEA6F2B6C783400A50BF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E23FEA712B6C783600A50BF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E23FEA742B6C783600A50BF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E259D7FE2B7EDA9200EF569B /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				E23FEA6F2B6C783400A50BF4 /* ContentView.swift */,
+				E259D7FE2B7EDA9200EF569B /* TextViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -53,6 +56,7 @@
 		E219E7452B75C1FC00D36BA7 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				E23FEA712B6C783600A50BF4 /* Assets.xcassets */,
 				E23FEA6D2B6C783400A50BF4 /* ios_first_appApp.swift */,
 			);
 			path = App;
@@ -88,7 +92,6 @@
 				E219E7452B75C1FC00D36BA7 /* App */,
 				E219E7442B75C1BF00D36BA7 /* Views */,
 				E219E7432B75C19700D36BA7 /* Models */,
-				E23FEA712B6C783600A50BF4 /* Assets.xcassets */,
 				E23FEA732B6C783600A50BF4 /* Preview Content */,
 			);
 			path = ios_first_app;
@@ -174,6 +177,7 @@
 			files = (
 				E23FEA702B6C783400A50BF4 /* ContentView.swift in Sources */,
 				E219E7472B75C25100D36BA7 /* Game.swift in Sources */,
+				E259D7FF2B7EDA9200EF569B /* TextViews.swift in Sources */,
 				E23FEA6E2B6C783400A50BF4 /* ios_first_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

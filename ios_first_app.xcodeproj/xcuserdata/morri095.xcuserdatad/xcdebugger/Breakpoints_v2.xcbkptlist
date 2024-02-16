@@ -68,5 +68,53 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0AEA289-D3F5-47EC-9AE5-5591D75123A7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_first_app/Views/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "A0AEA289-D3F5-47EC-9AE5-5591D75123A7 - 864be805ab643b2b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.shadow(color: SwiftUI.Color, radius: CoreGraphics.CGFloat, x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.padding(CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.Text)&gt;&gt;, &lt;&lt;opaque return type of SwiftUI.View.alert&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_0: SwiftUI.View, &#x3c4;_1_1: SwiftUI.View&gt;(_: SwiftUI.LocalizedStringKey, isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, actions: () -&gt; &#x3c4;_1_0, message: () -&gt; &#x3c4;_1_1) -&gt; some&gt;&gt;.0)&gt; in ios_first_app.ContentView.body.getter : some"
+                  moduleName = "ios_first_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/morri095/Documents/GitHub/ios_first_app/ios_first_app/Views/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "4137">
+               </Location>
+               <Location
+                  uuid = "A0AEA289-D3F5-47EC-9AE5-5591D75123A7 - 4a2b966913f31ae4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; SwiftUI.Text in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.shadow(color: SwiftUI.Color, radius: CoreGraphics.CGFloat, x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.padding(CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.Text)&gt;&gt;, &lt;&lt;opaque return type of SwiftUI.View.alert&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_0: SwiftUI.View, &#x3c4;_1_1: SwiftUI.View&gt;(_: SwiftUI.LocalizedStringKey, isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, actions: () -&gt; &#x3c4;_1_0, message: () -&gt; &#x3c4;_1_1) -&gt; some&gt;&gt;.0)&gt; in ios_first_app.ContentView.body.getter : some"
+                  moduleName = "ios_first_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/morri095/Documents/GitHub/ios_first_app/ios_first_app/Views/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "864">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

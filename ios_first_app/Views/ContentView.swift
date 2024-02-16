@@ -14,30 +14,35 @@ struct ContentView: View {
     @State private var game: Game = Game()
     var body: some View {
         VStack {
-            Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO")
-                .bold()
-                .multilineTextAlignment(.center)
-                .lineSpacing(4.0)
-                .lineSpacing(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
-                .font(.footnote)
-                .kerning(2.0)
-                .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-            Text (String(game.target))
-                .kerning(-1.0)
-                .font(.largeTitle)
-                .fontWeight(.black)
-            
+            Color("BackgroundColor")
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            InstructionsViews(game: $game)
             HStack{
                 Text ("1")
                 Slider(value: $sliderValue, in: 1...100)
                     .padding(0.0)
                 Text("100")
                     .bold()
-            }
-            Button("Hit me") {
+                    .foregroundColor(Color("TextColor"))
+            } .padding()
+            Button(action: {
                 alertIsVisible = true
                 print("slide is \(sliderValue)")
+            }) {
+                Text("Hit me".uppercased())
+                    .bold()
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(Color("TextColor"))
+                    
             }
+            .padding(20)
+            .background(
+            ZStack{
+                Color("ButtonColor")
+                LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.3), Color.clear]), startPoint: .top, endPoint: .bottom)
+            } )
+                .foregroundColor(.white)
+                .cornerRadius(21)
             .alert(
                 "Hello There",
                 isPresented: $alertIsVisible,
@@ -52,8 +57,19 @@ struct ContentView: View {
                          The slider's Value is \(roundedValue).
                          You scored \(game.points(sliderValue: roundedValue)) this round.
                          """)
-                }
-                )
+                })
+        }
+        .background(Color("BackgroundColor"))
+    }
+}
+struct InstructionsViews :View {
+    @Binding var game: Game
+    var body: some View {
+        VStack{
+            InstructionText(text: "🎯🎯🎯\nput the bullseye as close as you can to")
+                .padding(.leading, 30)
+                .padding(.trailing,30)
+            BigNumberText(text: String(game.target))
         }
     }
 }
@@ -61,6 +77,14 @@ struct ContentView: View {
             PreviewProvider{
             static var previews: some View {
                 ContentView()
+                ContentView()
+                    .previewLayout(.fixed(width: 568, height: 320))
+                ContentView()
+                    .preferredColorScheme(.dark
+                )
+                ContentView()
+                    .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+                    .previewLayout(.fixed(width: 568, height: 320))
         }
 }
 
